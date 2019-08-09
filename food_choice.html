@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>음식 결정</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/food_choice.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li class="title">
+                <a href="main.html">학식탈출</a>
+            </li>
+            <li class="story">
+                <a href="story.html">스토리</a>
+            </li>
+            <li class="howtouse">
+                <a href="howtouse.html">사용법</a>
+            </li>
+            <li class="profileAndCartAndLogin">
+                <div id="profile">
+                    <a href="#">
+                        <img src="assets/profile.png" width="16px" height="16px">
+                    </a>
+                </div>
+                <div id="cart">
+                    <a href="#">
+                        <img src="assets/cart.png" width="24px" height="20px">
+                    </a>
+                </div>
+                <div class="login-form">
+                    <input type="submit" value="로그인/회원가입" class="login_signup-btn">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="background_and_logo">
+        <div class="background"></div>
+        <div class="logo">
+            <img id="img_kor_logo" src="assets/Kor_logo.png" alt="Alternate Text" />
+            <p id="text_kor_univ">고려대학교</p>
+        </div>
+    </div>
+    
+    <div class="base">
+        <div class="wide_state_bar_area">
+            <div class="actual_state_bar_area">
+                <p class="state_name" id="food_list">음식목록 및 결정</p>
+                <p class="state_name" id="wish_list">장바구니</p>
+                <p class="state_name" id="location">세부위치</p>
+                <p class="state_name" id="final_decision">최종결정</p>
+                <div id="whole_state_bar"></div>
+                <div class="outer_circle" id="circle_food_list">
+                    <div class="inner_circle"></div>
+                </div>
+                <div class="outer_circle" id="circle_wish_list"></div>
+                <div class="outer_circle" id="circle_location"></div>
+                <div class="outer_circle" id="circle_final_dicision"></div>
+            </div>
+        </div>
+
+        <div class="contents_title">
+            <p id="text_contents_title">
+                학식탈출 가능한 곳
+            </p>
+        </div>
+
+        <div class="wide_restaurant_area">
+            <div class="actual_restaurant_area">
+                <div class="restaurant_area_col">
+                    <div class="restaurant_item">
+                        <div class="restaurant_logo_area subway_logo"></div>
+                        <div class="wide_restaurant_info_area">
+                            <div class="restaurant_name_area">서브웨이 안암점</div>
+                            <div class="restaurant_rate_area">
+                                <p class="star_image"></p>
+                                <p class="restaurant_rate_number">4.2</p>
+                                <p class="restaurant_review">&nbsp;| 리뷰 211</p>
+                            </div>
+                            <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                            <div class="restaurant_min_price_area">20,000원 이상 배달</div>
+                        </div>
+                    </div>
+                    <div class="restaurant_item">
+                        <div class="restaurant_logo_area subway_logo"></div>
+                        <div class="wide_restaurant_info_area">
+                            <div class="restaurant_name_area">서브웨이 안암점</div>
+                            <div class="restaurant_rate_area">
+                                <p class="star_image"></p>
+                                <p class="restaurant_rate_number">4.2</p>
+                                <p class="restaurant_review">&nbsp;| 리뷰 211</p>
+                            </div>
+                            <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                            <div class="restaurant_min_price_area">20,000원 이상 배달</div>
+                        </div>
+                    </div>
+                    <div class="restaurant_item">
+                        <div class="restaurant_logo_area subway_logo"></div>
+                        <div class="wide_restaurant_info_area">
+                            <div class="restaurant_name_area">서브웨이 안암점</div>
+                            <div class="restaurant_rate_area">
+                                <p class="star_image"></p>
+                                <p class="restaurant_rate_number">4.2</p>
+                                <p class="restaurant_review">&nbsp;| 리뷰 211</p>
+                            </div>
+                            <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                            <div class="restaurant_min_price_area">20,000원 이상 배달</div>
+                        </div>
+                    </div>
+                    <div class="restaurant_item">
+                        <div class="restaurant_logo_area subway_logo"></div>
+                        <div class="wide_restaurant_info_area">
+                            <div class="restaurant_name_area">서브웨이 안암점</div>
+                            <div class="restaurant_rate_area">
+                                <p class="star_image"></p>
+                                <p class="restaurant_rate_number">4.2</p>
+                                <p class="restaurant_review">&nbsp;| 리뷰 211</p>
+                            </div>
+                            <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                            <div class="restaurant_min_price_area">20,000원 이상 배달</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant_area_col">
+                    <a href="wish_list.html">
+                        <div class="restaurant_item">
+                            <div class="restaurant_logo_area bonjuk_logo"></div>
+                            <div class="wide_restaurant_info_area">
+                                <div class="restaurant_name_area">본죽 안암점</div>
+                                <div class="restaurant_rate_area">
+                                    <p class="star_image"></p>
+                                    <p class="restaurant_rate_number">2.8</p>
+                                    <p class="restaurant_review">&nbsp;| 리뷰 2</p>
+                                </div>
+                                <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                                <div class="restaurant_min_price_area">50,000원 이상 배달</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="wish_list.html">
+                        <div class="restaurant_item">
+                            <div class="restaurant_logo_area bonjuk_logo"></div>
+                            <div class="wide_restaurant_info_area">
+                                <div class="restaurant_name_area">본죽 안암점</div>
+                                <div class="restaurant_rate_area">
+                                    <p class="star_image"></p>
+                                    <p class="restaurant_rate_number">2.8</p>
+                                    <p class="restaurant_review">&nbsp;| 리뷰 2</p>
+                                </div>
+                                <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                                <div class="restaurant_min_price_area">50,000원 이상 배달</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="wish_list.html">
+                        <div class="restaurant_item">
+                            <div class="restaurant_logo_area bonjuk_logo"></div>
+                            <div class="wide_restaurant_info_area">
+                                <div class="restaurant_name_area">본죽 안암점</div>
+                                <div class="restaurant_rate_area">
+                                    <p class="star_image"></p>
+                                    <p class="restaurant_rate_number">2.8</p>
+                                    <p class="restaurant_review">&nbsp;| 리뷰 2</p>
+                                </div>
+                                <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                                <div class="restaurant_min_price_area">50,000원 이상 배달</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="wish_list.html">
+                        <div class="restaurant_item">
+                            <div class="restaurant_logo_area bonjuk_logo"></div>
+                            <div class="wide_restaurant_info_area">
+                                <div class="restaurant_name_area">본죽 안암점</div>
+                                <div class="restaurant_rate_area">
+                                    <p class="star_image"></p>
+                                    <p class="restaurant_rate_number">2.8</p>
+                                    <p class="restaurant_review">&nbsp;| 리뷰 2</p>
+                                </div>
+                                <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                                <div class="restaurant_min_price_area">50,000원 이상 배달</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="restaurant_area_col">
+                    <div class="restaurant_item">
+                        <div class="restaurant_logo_area yeoptteok_logo"></div>
+                        <div class="wide_restaurant_info_area">
+                            <div class="restaurant_name_area">엽떡 안암점</div>
+                            <div class="restaurant_rate_area">
+                                <p class="star_image"></p>
+                                <p class="restaurant_rate_number">3.8</p>
+                                <p class="restaurant_review">&nbsp;| 리뷰 152</p>
+                            </div>
+                            <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                            <div class="restaurant_min_price_area">30,000원 이상 배달</div>
+                        </div>
+                    </div>
+                    <div class="restaurant_item">
+                        <div class="restaurant_logo_area yeoptteok_logo"></div>
+                        <div class="wide_restaurant_info_area">
+                            <div class="restaurant_name_area">엽떡 안암점</div>
+                            <div class="restaurant_rate_area">
+                                <p class="star_image"></p>
+                                <p class="restaurant_rate_number">3.8</p>
+                                <p class="restaurant_review">&nbsp;| 리뷰 152</p>
+                            </div>
+                            <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                            <div class="restaurant_min_price_area">30,000원 이상 배달</div>
+                        </div>
+                    </div>
+                    <div class="restaurant_item">
+                        <div class="restaurant_logo_area yeoptteok_logo"></div>
+                        <div class="wide_restaurant_info_area">
+                            <div class="restaurant_name_area">엽떡 안암점</div>
+                            <div class="restaurant_rate_area">
+                                <p class="star_image"></p>
+                                <p class="restaurant_rate_number">3.8</p>
+                                <p class="restaurant_review">&nbsp;| 리뷰 152</p>
+                            </div>
+                            <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                            <div class="restaurant_min_price_area">30,000원 이상 배달</div>
+                        </div>
+                    </div>
+                    <div class="restaurant_item">
+                        <div class="restaurant_logo_area yeoptteok_logo"></div>
+                        <div class="wide_restaurant_info_area">
+                            <div class="restaurant_name_area">엽떡 안암점</div>
+                            <div class="restaurant_rate_area">
+                                <p class="star_image"></p>
+                                <p class="restaurant_rate_number">3.8</p>
+                                <p class="restaurant_review">&nbsp;| 리뷰 152</p>
+                            </div>
+                            <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                            <div class="restaurant_min_price_area">30,000원 이상 배달</div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

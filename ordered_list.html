@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>장바구니 selected</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/ordered_list.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="base">
+            <div id="navbar">
+                    <ul>
+                        <li class="title">
+                            <a href="main.html">학식탈출</a>
+                        </li>
+                        <li class="story">
+                            <a href="story.html">스토리</a>
+                        </li>
+                        <li class="howtouse">
+                            <a href="howtouse.html">사용법</a>
+                        </li>
+                        <li class="profileAndCartAndLogin">
+                            <div id="profile">
+                                <a href="#">
+                                    <img src="assets/profile.png" width="16px" height="16px">
+                                </a>
+                            </div>
+                            <div id="cart">
+                                <a href="#">
+                                    <img src="assets/cart.png" width="24px" height="20px">
+                                </a>
+                            </div>
+                            <div class="login-form">
+                                <input type="submit" value="로그인/회원가입" class="login_signup-btn">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+        <div class="background_and_logo">
+                <div class="background">
+    
+                </div>
+                <div class="logo">
+                    <img id="img_kor_logo" src="assets/Kor_logo.png" alt="Alternate Text" />
+                    <p id="text_kor_univ">고려대학교</p>
+                </div>
+            </div>
+
+        <div class="wide_state_bar_area">
+            <div class="actual_state_bar_area">
+                <p class="state_name" id="food_list">음식목록 및 결정</p>
+                <p class="state_name" id="wish_list">장바구니</p>
+                <p class="state_name" id="location">세부위치</p>
+                <p class="state_name" id="final_decision">최종결정</p>
+                <div id="whole_state_bar"></div>
+                <div id="state_bar_food-wish"></div>
+                <div id="state_bar_wish-location"></div>
+                <div id="state_bar_location-final"></div>
+                <div class="outer_circle">
+                    <img id="circle_food_list" src="assets/orange_check.png" />
+                </div>
+                <div class="outer_circle">
+                    <img id="circle_wish_list" src="assets/orange_check.png" />
+                </div>
+                <div class="outer_circle">
+                        <img id="circle_location" src="assets/orange_check.png" />
+                    </div>
+                <div class="outer_circle" id="circle_final_dicision">
+                    <div class="inner_circle"></div>
+                </div>
+               
+        </div>
+
+        <div class="contents_title">
+            <p id="text_contents_title">
+                주문 내역 확인하기
+            </p>
+        </div>
+
+        <div class="del">
+               
+                    <p id="p1">
+                        <u>배달정보</u>
+                    </p>
+                    <p id="p2">
+                            <b>고려대학교 안암캠퍼스</b>
+                        </p>
+                    <p id="p3">
+                        <b>중앙도서관</b>
+                    </p>
+                    <div class="input-group mb-3" style="margin-top: 26px;">
+                            <input type="text" class="form-control" placeholder="휴대폰 번호를 입력하세요" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            
+                          </div>
+
+                    <p id='p1' style="margin-top: 90px;">
+                        <u>요청사항</u>
+                    </p>
+
+                    <div class="input-group mb-3" style="margin-top: 26px;">
+                            <input type="text" class="form-control" placeholder="40자까지 작성할 수 있어요" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            
+                          </div>
+
+                    <p id='p1' style="margin-top: 90px;">
+                            <u>결제금액</u>
+                        </p>
+
+                    <p id="p4" >
+                            <b>18,000원</b>
+                        </p>
+         
+                    
+              
+        
+            </div>
+    
+    
+            <div class="wide_go_to_next_area" style="margin-top: 200px;">
+                <div class="actual_go_to_next_area">
+                    <a href="ordered_list_final.html">
+                            <p class="btn_go_to_next_text">주문 완료하기!</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+    </html>

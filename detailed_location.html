@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>장바구니 selected</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/detailed_location.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="base">
+            <div id="navbar">
+                    <ul>
+                        <li class="title">
+                            <a href="main.html">학식탈출</a>
+                        </li>
+                        <li class="story">
+                            <a href="story.html">스토리</a>
+                        </li>
+                        <li class="howtouse">
+                            <a href="howtouse.html">사용법</a>
+                        </li>
+                        <li class="profileAndCartAndLogin">
+                            <div id="profile">
+                                <a href="#">
+                                    <img src="assets/profile.png" width="16px" height="16px">
+                                </a>
+                            </div>
+                            <div id="cart">
+                                <a href="#">
+                                    <img src="assets/cart.png" width="24px" height="20px">
+                                </a>
+                            </div>
+                            <div class="login-form">
+                                <input type="submit" value="로그인/회원가입" class="login_signup-btn">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+        <div class="background_and_logo">
+                <div class="background">
+    
+                </div>
+                <div class="logo">
+                    <img id="img_kor_logo" src="assets/Kor_logo.png" alt="Alternate Text" />
+                    <p id="text_kor_univ">고려대학교</p>
+                </div>
+            </div>
+
+        <div class="wide_state_bar_area">
+            <div class="actual_state_bar_area">
+                <p class="state_name" id="food_list">음식목록 및 결정</p>
+                <p class="state_name" id="wish_list">장바구니</p>
+                <p class="state_name" id="location">세부위치</p>
+                <p class="state_name" id="final_decision">최종결정</p>
+                <div id="whole_state_bar"></div>
+                <div id="state_bar_food-wish"></div>
+                <div id="state_bar_wish-location"></div>
+                <div class="outer_circle">
+                    <img id="circle_food_list" src="assets/orange_check.png" />
+                </div>
+                <div class="outer_circle">
+                    <img id="circle_wish_list" src="assets/orange_check.png" />
+                </div>
+                <div class="outer_circle" id="circle_location">
+                    <div class="inner_circle"></div>
+                </div>
+                <div class="outer_circle" id="circle_final_dicision"></div>
+            </div>
+        </div>
+
+        <div class="contents_title">
+            <p id="text_contents_title">
+                배달받을 위치 정하기
+            </p>
+        </div>
+<!-- 
+        <div class="consonant_find">
+            <div class="consonant_box">
+                <p class="consonant_card">
+                    ㄱ
+                </p>
+                <p class="consonant_card">
+                    ㄴ
+                </p>
+                <p class="consonant_card">
+                    ㄷ
+                </p>
+                <p class="consonant_card">
+                    ㄹ
+                </p>
+                <p class="consonant_card">
+                    ㅁ
+                </p>
+                <p class="consonant_card">
+                    ㅂ
+                </p>
+                <p class="consonant_card">
+                    ㅅ
+                </p>
+                <p class="consonant_card">
+                    ㅇ
+                </p>
+                <p class="consonant_card">
+                    ㅈ
+                </p>
+                <p class="consonant_card">
+                    ㅊ
+                </p>
+                <p class="consonant_card">
+                    ㅋ
+                </p>
+                <p class="consonant_card">
+                    ㅌ
+                </p>
+                <p class="consonant_card">
+                    ㅍ
+                </p>
+                <p class="consonant_card">
+                    ㅎ
+                </p>
+            </div>
+        </div> -->
+
+        <div class="contents">
+            <div class="contents_item_col">
+                <div class="contents_item">
+                    <img class="location_profile" src="assets/중앙도서관.jpg"/>
+                    <div class="location_info_area">
+                        <p class="location_info_name">중앙도서관</p>
+                        <p class="location_info_lunch">점심수령시간: 11:50</p>
+                        <p class="location_info_dinner">저녁수령시간: 17:50</p>
+                    </div>
+                </div>
+
+                <div class="contents_item">
+                    <img class="location_profile" src="assets/프런티어관.jpg" />
+                    <div class="location_info_area">
+                        <p class="location_info_name">프런티어관</p>
+                        <p class="location_info_lunch">점심수령시간: 11:50</p>
+                        <p class="location_info_dinner">저녁수령시간: 17:50</p>
+                    </div>
+                </div>
+
+                <div class="contents_item">
+                    <img class="location_profile" src="assets/중앙도서관.jpg" />
+                    <div class="location_info_area">
+                        <p class="location_info_name">중앙도서관</p>
+                        <p class="location_info_lunch">점심수령시간: 11:50</p>
+                        <p class="location_info_dinner">저녁수령시간: 17:50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contents_item_col">
+                <div class="contents_item">
+                    <img class="location_profile" src="assets/교문.jpg" />
+                    <div class="location_info_area">
+                        <p class="location_info_name">교문</p>
+                        <p class="location_info_lunch">점심수령시간: 11:50</p>
+                        <p class="location_info_dinner">저녁수령시간: 17:50</p>
+                    </div>
+                </div>
+
+                <div class="contents_item">
+                    <img class="location_profile" src="assets/중앙도서관.jpg" />
+                    <div class="location_info_area">
+                        <p class="location_info_name">중앙도서관</p>
+                        <p class="location_info_lunch">점심수령시간: 11:50</p>
+                        <p class="location_info_dinner">저녁수령시간: 17:50</p>
+                    </div>
+                </div>
+
+                <div class="contents_item">
+                    <img class="location_profile" src="assets/중앙도서관.jpg" />
+                    <div class="location_info_area">
+                        <p class="location_info_name">중앙도서관</p>
+                        <p class="location_info_lunch">점심수령시간: 11:50</p>
+                        <p class="location_info_dinner">저녁수령시간: 17:50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wide_go_to_next_area">
+            <a href="#" id="button_to_next_link">
+                <div class="actual_go_to_next_area" id="button_to_next">
+                    <p class="btn_go_to_next_text">다음 단계로</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        var checked = false;
+
+        $(document).on('click', 'a[href="#"]', function(e){
+            e.preventDefault();
+        });
+
+        $('.contents_item').on('click', function() {
+            if(!checked) {
+                $(this).css('background-color', '#FE8A00');
+                $(this).attr('clicked', 'true');
+                $('#button_to_next').css('background-color', '#FE8A00');
+                $('#button_to_next').css('color', '#FFFFFF');
+                $('#button_to_next_link').attr('href', 'ordered_list.html');
+                checked = true;
+            }
+
+            else {
+                var clicked = ($(this).attr('clicked') == "true");
+                $('.contents_item').css('background-color', '#FFFFFF');
+                $('.contents_item').attr('clicked', 'false');
+                if(clicked == false) {
+                    $(this).attr('clicked', 'true');
+                    $(this).css('background-color', '#FE8A00');
+                }
+
+                else{
+                    checked = false;
+                    $('#button_to_next').css('background-color', '#e3e3e3');
+                    $('#button_to_next').css('color', '#C9C9C9');
+                    $('#button_to_next_link').attr('href', '#');
+                }
+                
+            }
+            
+        });
+    </script>
+ 
+</body>
+</html>

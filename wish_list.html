@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>장바구니 selected</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/wish_list.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li class="title">
+                <a href="main.html">학식탈출</a>
+            </li>
+            <li class="story">
+                <a href="story.html">스토리</a>
+            </li>
+            <li class="howtouse">
+                <a href="howtouse.html">사용법</a>
+            </li>
+            <li class="profileAndCartAndLogin">
+                <div id="profile">
+                    <a href="#">
+                        <img src="assets/profile.png" width="16px" height="16px">
+                    </a>
+                </div>
+                <div id="cart">
+                    <a href="#">
+                        <img src="assets/cart.png" width="24px" height="20px">
+                    </a>
+                </div>
+                <div class="login-form">
+                    <input type="submit" value="로그인/회원가입" class="login_signup-btn">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="background_and_logo">
+        <div class="background">
+
+        </div>
+        <div class="logo">
+            <img id="img_kor_logo" src="assets/Kor_logo.png" alt="Alternate Text" />
+            <p id="text_kor_univ">고려대학교</p>
+        </div>
+    </div>
+
+    <div class="base">
+        <div class="wide_state_bar_area">
+            <div class="actual_state_bar_area">
+                <p class="state_name" id="food_list">음식목록 및 결정</p>
+                <p class="state_name" id="wish_list">장바구니</p>
+                <p class="state_name" id="location">세부위치</p>
+                <p class="state_name" id="final_decision">최종결정</p>
+                <div id="whole_state_bar"></div>
+                <div id="state_bar_food-wish"></div>
+                <div class="outer_circle">
+                    <img id="circle_food_list" src="assets/orange_check.png" />
+                </div>
+                <div class="outer_circle" id="circle_wish_list">
+                    <div class="inner_circle"></div>
+                </div>
+                <div class="outer_circle" id="circle_location"></div>
+                <div class="outer_circle" id="circle_final_dicision"></div>
+            </div>
+        </div>
+
+        <div class="wide_wish_list_menu_area">
+            <div class="actual_wish_list_menu_area">
+                <div class="actual_wish_list_menu_area_left">
+                    <div class="wide_restaurant_info_area">
+                        <div class="restaurant_thumbnail_and_info_area">
+                            <div class="restaurant_thumbnail_area"></div>
+                            <div class="restaurant_info_area">
+                                <div class="restaurant_name_area">본죽 안암점</div>
+                                <div class="restaurant_rate_area">
+                                    <p class="star_image"></p>
+                                    <p class="restaurant_rate_number">4.2</p>
+                                    <p class="restaurant_info_review">&nbsp;| 리뷰 211</p>
+                                </div>
+                                <div class="restaurant_time_area">09:00 ~ 22:00</div>
+                                <div class="restaurant_min_price_area">20,000원 이상 배달</div>
+                                <div class="restaurant_payment_area">결제 : 신용카드, 현금</div>
+                                <div class="restaurant_origin_area">원산지 정보 ></div>
+                            </div>
+                        </div>
+                        <div class="restaurant_info_decision_bar"></div>
+                        <div class="owner_comment_area">
+                            <p class="owner_comment_text">사장님 코멘트: 주문과 동시에 조리가 진행되니 조금 늦는 점 양해 부탁드려요.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="restaurant_menu_area">
+                        <div class="restaurant_btn_area">
+                            <div class="restaurant_menu_btn">
+                                <div class="restaurant_menu_btn_title">
+                                    <p class="restaurant_menu_btn_title_text">메뉴 (3개)</p>
+                                </div>
+                            </div>
+                            <div class="restaurant_review_btn">
+                                <div class="restaurant_review_btn_title">
+                                    <p class="restaurant_review_btn_title_text">리뷰 (2개)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="restaurant_menu_and_review">
+                            <div id = "restaurant_menu_view">
+                                <div class="restaurant_menu" id="menu_1">
+                                    <div class="restaurant_menu_thumbnail_area" id="truffle_juk"></div>
+                                    <div class="restaurant_menu_info">
+                                        <p class="menu_name">트러플 전복죽</p>
+                                        <p class="menu_price">16,000원</p>
+                                    </div>
+                                </div>
+                                <div class="restaurant_menu" id="menu_2">
+                                    <div class="restaurant_menu_thumbnail_area" id="pumpkin_juk"></div>
+                                    <div class="restaurant_menu_info">
+                                        <p class="menu_name">단호박 죽</p>
+                                        <p class="menu_price">9,000원</p>
+                                    </div>
+                                </div>
+                                <div class="restaurant_menu" id="menu_3">
+                                    <div class="restaurant_menu_thumbnail_area" id="shrimp_juk"></div>
+                                    <div class="restaurant_menu_info">
+                                        <p class="menu_name">새우 죽</p>
+                                        <p class="menu_price">8,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id = "restaurant_review_view" style="display: none;">
+                                <div class="restaurant_review">
+                                    <p>이 죽을 먹고 암이 나았습니다.</p>
+                                </div>
+                                <div class="restaurant_review">
+                                    <p>이 죽을 먹고 암이 암에 걸렸습니다.</p>
+                                </div>
+                            </div>
+                                
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <div class="actual_wish_list_menu_area_right">
+                    <div class="wish_list_menu_area">
+                        <div class="wish_list_name">
+                            <p class="wish_list_name_text">장바구니</p>
+                        </div>
+                        <div class="wish_list_space"></div>
+
+                        <div class="wish_list_table_area">
+                            <table id="wish_list_table">
+                                <tr>
+                                    <td class="wish_list_menu_head">주문 메뉴</td>
+                                    <td class="wish_list_number_head">수량</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="total_price_area">
+                            <div class="total_price_text">
+                                <p class="total_price_text_text">총 주문 금액</p>
+                            </div>
+                            <div class="total_price_number">
+                                <p class="total_price_number_text" id="total_price_number_text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wide_go_to_next_area">
+            <a href="#" id="actual_go_to_next_hiperlink">
+                <div class="actual_go_to_next_area">
+                    <p class="btn_go_to_next_text">다음 단계로</p>
+                </div>
+            </a>
+        </div>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
+
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script type="text/javascript">
+        var menu_index = 0;
+        var menu_amount = 0;
+
+        $(document).on('click', 'a[href="#"]', function(e){
+            e.preventDefault();
+        });
+
+        function Menu(name, price) {
+            this.name = name;
+            this.price = price;
+            this.amount = 1;
+            this.present = false;
+        }
+
+        Menu.prototype.getName = function() {
+            return this.name;
+        }
+
+        Menu.prototype.getAmount = function() {
+            return this.amount;
+        }
+
+        Menu.prototype.getPrice = function() {
+            return this.price;
+        }
+
+        function comma(num) {
+            var num_text = num + "";
+            var str = num_text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+            str = str + "원";
+            return str;
+        }
+
+        function uncomma(str) {
+            str = String(str);
+            str_num = str.substring(0, str.length - 1);
+            return Number(str_num.replace(/[^\d]+/g, ''));
+        }
+
+        function adjust_total_price(price) {
+            var total_price_area = document.getElementById('total_price_number_text');
+            var total_price_text = total_price_area.innerHTML;
+            if(total_price_text == "") {
+                total_price_text = "0원";
+            }
+            var total_price = uncomma(total_price_text);
+            total_price = total_price + price;
+            total_price_area.innerHTML = comma(total_price);
+        }
+
+        function adjustColor() {
+            var total_price_text_area = document.getElementsByClassName('total_price_text')[0];
+            var btn_to_next = document.getElementsByClassName('actual_go_to_next_area')[0];
+            if(menu_amount == 0) {
+                $(total_price_text_area).css('background-color', '#c7c7c7');
+                $(total_price_text_area).css('color', '#FFFFFF');
+                $(btn_to_next).css('background-color', '#e3e3e3');
+                $(btn_to_next).css('color', '#C9C9C9');
+                $('#actual_go_to_next_hiperlink').attr('href', '#'); //a태그 비활성화
+
+            }
+
+            else {
+                $(total_price_text_area).css('background-color', '#F9B258');
+                $(total_price_text_area).css('color', '#ffffff');
+                $(btn_to_next).css('background-color', '#F9B258');
+                $(btn_to_next).css('color', '#ffffff');
+                $('#actual_go_to_next_hiperlink').attr('href', 'detailed_location.html'); //a태그 활성화
+            }
+        }
+
+        function blockDuple(menu_code) {
+            switch (menu_code) {
+                case 1:
+                    truffle_juk.present = false;
+                    break;
+                
+                case 2:
+                    pumpkin_juk.present = false;
+                    break;
+
+                case 3:   
+                    shrimp_juk.present = false;
+                    break;
+            }
+        }
+
+        var truffle_juk = new Menu("트러플 전복죽", 16000);
+        var pumpkin_juk = new Menu("단호박 죽", 9000);
+        var shrimp_juk = new Menu("새우 죽", 8000);
+
+        $("#menu_1").on('click', function() {
+            if(!(truffle_juk.present)) {
+                var index = menu_index++;
+                var addedList = document.createElement('tr');
+                addedList.setAttribute('class', 'wish_list_table_row');
+                addedList.setAttribute('id', index + '_wish_list_table_row');
+                addedList.setAttribute('menu_code', '1');
+                addedList.innerHTML = '<td class="wish_list_menu_body">'+
+                                            truffle_juk.getName() +
+                                            '<div class="btn_to_adjust btn_X_to_remove" id="'+ index +'_btn_X_to_remove">' +
+                                                'X' +
+                                            '</div>' +                                    
+                                        '</td>' +
+                                        '<td class="wish_list_number_body">' +
+                                            '<div class="btn_to_adjust btn_minus_to_dec" id="'+ index + '_btn_minus_to_dec">-</div>'+
+                                            '<div class="wish_list_number" id="' + index + '_wish_list_number" price="' + truffle_juk.getPrice() + '">'+
+                                                '1'+
+                                            '</div>'+
+                                            '<div class="btn_to_adjust btn_plus_to_inc" id="'+ index + '_btn_plus_to_inc">+</div>'+
+                                        '</td>';
+
+                adjust_total_price(truffle_juk.getPrice());
+                $("#wish_list_table").append(addedList);
+                truffle_juk.present = true;
+                menu_amount++;
+
+                adjustColor();
+            }
+        });
+
+        $("#menu_2").on('click', function() {
+            if(!(pumpkin_juk.present)) {
+                var index = menu_index++;
+                var addedList = document.createElement('tr');
+                addedList.setAttribute('class', 'wish_list_table_row');
+                addedList.setAttribute('id', index + '_wish_list_table_row');
+                addedList.setAttribute('menu_code', '2');
+                addedList.innerHTML =  '<td class="wish_list_menu_body">'+
+                                            pumpkin_juk.getName() +
+                                            '<div class="btn_to_adjust btn_X_to_remove" id="'+ index +'_btn_X_to_remove">' +
+                                                'X' +
+                                            '</div>' +                                    
+                                        '</td>' +
+                                        '<td class="wish_list_number_body">' +
+                                            '<div class="btn_to_adjust btn_minus_to_dec" id="'+ index + '_btn_minus_to_dec">-</div>'+
+                                            '<div class="wish_list_number" id="' + index + '_wish_list_number" price="' + pumpkin_juk.getPrice() + '">'+
+                                                '1' +
+                                            '</div>'+
+                                            '<div class="btn_to_adjust btn_plus_to_inc" id="'+ index + '_btn_plus_to_inc">+</div>'+
+                                        '</td>';
+                
+                adjust_total_price(pumpkin_juk.getPrice());
+                $("#wish_list_table").append(addedList);
+                pumpkin_juk.present = true;
+                menu_amount++;
+
+                adjustColor();
+            }
+        });
+
+        $("#menu_3").on('click', function() {
+            if(!(shrimp_juk.present)) {
+                var index = menu_index++;
+                var addedList = document.createElement('tr');
+                addedList.setAttribute('class', 'wish_list_table_row');
+                addedList.setAttribute('id', index + '_wish_list_table_row');
+                addedList.setAttribute('menu_code', '3');
+                addedList.innerHTML = '<td class="wish_list_menu_body">'+
+                                            shrimp_juk.getName() +
+                                            '<div class="btn_to_adjust btn_X_to_remove" id="'+ index +'_btn_X_to_remove">' +
+                                                'X' +
+                                            '</div>' +                                    
+                                        '</td>' +
+                                        '<td class="wish_list_number_body">' +
+                                            '<div class="btn_to_adjust btn_minus_to_dec" id="'+ index + '_btn_minus_to_dec">-</div>'+
+                                            '<div class="wish_list_number" id="' + index + '_wish_list_number" price="' + shrimp_juk.getPrice() + '">'+
+                                                '1'+
+                                            '</div>'+
+                                            '<div class="btn_to_adjust btn_plus_to_inc" id="'+ index + '_btn_plus_to_inc">+</div>'+
+                                        '</td>';
+
+                adjust_total_price(shrimp_juk.getPrice());
+                $("#wish_list_table").append(addedList);
+                shrimp_juk.present = true;
+                menu_amount++;
+
+                adjustColor();
+            }
+        });
+
+        $(document).on("click", ".btn_plus_to_inc", function() {
+            var id = $(this).attr('id');
+            var bar = id.indexOf('_');
+            var index = id.substr(0, bar);
+            var num_area = document.getElementById(index + '_wish_list_number');
+            var num = num_area.innerHTML;
+            num++;
+            num_area.innerHTML = num;
+
+            var price = Number($(num_area).attr('price'));
+            adjust_total_price(price);
+        });
+
+        $(document).on('click', ".btn_minus_to_dec", function() {
+            var id = $(this).attr('id');
+            var bar = id.indexOf('_');
+            var index = id.substr(0, bar);
+            var num_area = document.getElementById(index + '_wish_list_number');
+            var num = num_area.innerHTML;
+            if(num > 1) {
+                num--;
+                num_area.innerHTML = num;
+
+                var price = Number($(num_area).attr('price'));
+                adjust_total_price(0 - price);
+            }
+        });
+
+        $(document).on('click', ".btn_X_to_remove", function() {
+            var id = $(this).attr('id');
+            var bar = id.indexOf('_');
+            var index = id.substr(0, bar);
+            var num_area = document.getElementById(index + '_wish_list_number');
+            var num = num_area.innerHTML;
+            var price = Number($(num_area).attr('price')) * num;
+            adjust_total_price(0 - price);
+
+            var delList = document.getElementById(index + '_wish_list_table_row');
+            var menu_code = Number($(delList).attr('menu_code'));
+
+            $(delList).remove();
+            menu_amount--;
+
+            blockDuple(menu_code);
+            adjustColor();
+        });
+
+        $('.restaurant_menu_btn').on('click', function() {
+            var display = String($('#restaurant_menu_view').attr('style'));
+            var point = display.length - 1;
+            display = display.substring(9, point);
+            if(display == 'none') {
+                $('#restaurant_menu_view').toggle();
+                $('#restaurant_review_view').toggle();
+                $('.restaurant_review_btn').css('background-color', '#848484');
+                $('.restaurant_review_btn').css('color', '#848484');
+                $('.restaurant_menu_btn').css('background-color', '#F9B258');
+                $('.restaurant_menu_btn').css('color', '#FE8A00');
+            }
+            
+        });
+
+        $('.restaurant_review_btn').on('click', function() {
+            var display = String($('#restaurant_review_view').attr('style'));
+            var point = display.length - 1;
+            display = display.substring(9, point);
+            if(display == 'none') {
+                $('#restaurant_menu_view').toggle();
+                $('#restaurant_review_view').toggle();
+                $('.restaurant_review_btn').css('background-color', '#F9B258');
+                $('.restaurant_review_btn').css('color', '#FE8A00');
+                $('.restaurant_menu_btn').css('background-color', '#848484');
+                $('.restaurant_menu_btn').css('color', '#848484');
+            }
+        });
+    </script>
+</body>
+</html>
